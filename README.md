@@ -30,5 +30,12 @@ ROBERTa small model은 합칠 경우 좋아지는지 고려해봐야함.
 
 현재 계획은 ROBERTa largeCV5 + ROBERTa baseCV5 + ELECTRA base CV5 + ROBERTa small CV5를 logit emsemble하여 수행해볼 예정 어떤 모델을 합쳤을때 성능이 좋아지는지 비교해볼 것이다.
 
+### 2.26
+
+RoBERTa large model과 roBERTa-base(CV), KoELECTRA(CV)를 적용한 model을 logit emsemble을 통해 0.883(public score) 획득.
+
+Data augmentaion 완료 aug효과를 확인할 예정
+
+roBERTa-large model에 대해 k-fold cross validation 을 적용해서 결과를 볼 예정
 
 ## 
