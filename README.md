@@ -38,4 +38,13 @@ Data augmentaion 완료 aug효과를 확인할 예정
 
 roBERTa-large model에 대해 k-fold cross validation 을 적용해서 결과를 볼 예정
 
-## 
+### 3.2
+
+Data augmentation 완료 10000개의 train data 추가 및 KoELECTRA의 경우 augmentation된 data를 바탕으로 5-fold cross validation 수행 좀더 모델이 robust 해지는 효과가 있어 score가 조금 상승했다.
+
+
+최종적으로 roBERTa-large(no CV), roBERTa-base(CV), ELECTRA-base(CV+ data augmentation)
+모델 결과를 앙상블하여 최종 결과를 얻었다.
+
+0.886 public, 0.881 private score 를 획득하여 최종순위 33등을 기록했다.
+
